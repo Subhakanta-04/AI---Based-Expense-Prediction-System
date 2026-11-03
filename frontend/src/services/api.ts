@@ -1,4 +1,4 @@
-import { 
+﻿import { 
   User,
   AuthResponse,
   BudgetStatus,
@@ -14,11 +14,11 @@ import {
   AIInsight 
 } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 function getAuthHeader(): Record<string, string> {
   const token = localStorage.getItem('fyte_token') || localStorage.getItem('spendwise_token');
-  return token ? { 'Authorization': `Bearer ${token}` } : {};
+  return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
 async function fetchJson<T>(endpoint: string, options?: RequestInit): Promise<T> {

@@ -27,7 +27,7 @@ class Settings:
         "http://localhost:3000",
         "http://127.0.0.1:5173",
         "http://127.0.0.1:3000",
-        "*"
     ]
+    ALLOWED_ORIGIN_REGEX: str = r"https://.*\.vercel\.app"
 
 settings = Settings()

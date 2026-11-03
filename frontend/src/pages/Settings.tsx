@@ -19,12 +19,16 @@ export const SettingsPage: React.FC<SettingsProps> = ({ darkMode, setDarkMode })
   const [resetting, setResetting] = useState(false);
   const [resetMessage, setResetMessage] = useState<string | null>(null);
 
+  const apiHealthUrl = import.meta.env.VITE_API_URL
+    ? `${import.meta.env.VITE_API_URL.replace(/\/api$/, '')}/health`
+    : '/api/health';
+
   useEffect(() => {
-    fetch('http://localhost:8000/api/health')
+    fetch(apiHealthUrl)
       .then(res => res.json())
       .then(data => setHealth(data))
       .catch(() => setHealth({ status: 'offline', app: 'FYTE', version: '1.0.0' }));
-  }, []);
+  }, [apiHealthUrl]);
 
   const handleReset = async () => {
     if (!window.confirm("Restore default expense_data.csv (114 records)?")) return;
@@ -100,7 +104,7 @@ export const SettingsPage: React.FC<SettingsProps> = ({ darkMode, setDarkMode })
 
           <div className="p-3.5 rounded-lg bg-zinc-900/80 border border-zinc-800">
             <span className="text-[10px] text-zinc-400 block mb-1 font-mono-code">Endpoint URL</span>
-            <span className="text-xs font-mono-code text-zinc-200">http://localhost:8000/api</span>
+            <span className="text-xs font-mono-code text-zinc-200">{import.meta.env.VITE_API_URL || '/api'}</span>
           </div>
 
           <div className="p-3.5 rounded-lg bg-zinc-900/80 border border-zinc-800">
