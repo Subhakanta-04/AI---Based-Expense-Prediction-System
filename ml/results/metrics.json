@@ -1,0 +1,70 @@
+{
+  "best_model": "XGBoost",
+  "models": {
+    "Linear Regression": {
+      "test": {
+        "mae": 103.43,
+        "mse": 24716.14,
+        "rmse": 157.21,
+        "r2": 0.882,
+        "mape": 17.48
+      },
+      "train": {
+        "mae": 76.7,
+        "mse": 38382.61,
+        "rmse": 195.91,
+        "r2": 0.9325,
+        "mape": 9.81
+      }
+    },
+    "Random Forest": {
+      "test": {
+        "mae": 71.25,
+        "mse": 16262.59,
+        "rmse": 127.52,
+        "r2": 0.9224,
+        "mape": 10.19
+      },
+      "train": {
+        "mae": 72.23,
+        "mse": 33195.67,
+        "rmse": 182.2,
+        "r2": 0.9417,
+        "mape": 7.24
+      }
+    },
+    "Gradient Boosting": {
+      "test": {
+        "mae": 69.23,
+        "mse": 22462.84,
+        "rmse": 149.88,
+        "r2": 0.8928,
+        "mape": 9.18
+      },
+      "train": {
+        "mae": 80.35,
+        "mse": 34764.56,
+        "rmse": 186.45,
+        "r2": 0.9389,
+        "mape": 8.82
+      }
+    },
+    "XGBoost": {
+      "test": {
+        "mae": 42.95,
+        "mse": 3720.33,
+        "rmse": 60.99,
+        "r2": 0.9822,
+        "mape": 7.78
+      },
+      "train": {
+        "mae": 86.6,
+        "mse": 42585.99,
+        "rmse": 206.36,
+        "r2": 0.9251,
+        "mape": 9.42
+      }
+    }
+  },
+  "criteria": "Chronological 80/20 split evaluated on RMSE & R\u00b2"
+}

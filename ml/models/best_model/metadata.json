@@ -1,0 +1,196 @@
+{
+  "best_model_name": "XGBoost",
+  "primary_criterion": "Lowest RMSE",
+  "secondary_criterion": "Highest R2",
+  "test_metrics": {
+    "mae": 42.95,
+    "mse": 3720.33,
+    "rmse": 60.99,
+    "r2": 0.9822,
+    "mape": 7.78
+  },
+  "train_metrics": {
+    "mae": 86.6,
+    "mse": 42585.99,
+    "rmse": 206.36,
+    "r2": 0.9251,
+    "mape": 9.42
+  },
+  "num_features": 96,
+  "features": [
+    "Est_Log_Amount",
+    "Est_Amount",
+    "tfidf_accessories",
+    "tfidf_accessory",
+    "tfidf_amazon",
+    "tfidf_auto",
+    "tfidf_bag",
+    "tfidf_banking",
+    "tfidf_bill",
+    "tfidf_books",
+    "tfidf_breakfast",
+    "tfidf_cab",
+    "tfidf_card",
+    "tfidf_cash",
+    "tfidf_clothes",
+    "tfidf_clothing",
+    "tfidf_consultation",
+    "tfidf_credit",
+    "tfidf_decor",
+    "tfidf_dinner",
+    "tfidf_doctor",
+    "tfidf_electricity",
+    "tfidf_entertainment",
+    "tfidf_evening",
+    "tfidf_fees",
+    "tfidf_festival",
+    "tfidf_food",
+    "tfidf_footwear",
+    "tfidf_friends",
+    "tfidf_gadget",
+    "tfidf_gaming",
+    "tfidf_gifts",
+    "tfidf_grocery",
+    "tfidf_gym",
+    "tfidf_health",
+    "tfidf_home",
+    "tfidf_internet",
+    "tfidf_items",
+    "tfidf_lunch",
+    "tfidf_medicine",
+    "tfidf_monsoon",
+    "tfidf_net",
+    "tfidf_netflix",
+    "tfidf_ola",
+    "tfidf_order",
+    "tfidf_outing",
+    "tfidf_pass",
+    "tfidf_premium",
+    "tfidf_prime",
+    "tfidf_restaurant",
+    "tfidf_rickshaw",
+    "tfidf_shopping",
+    "tfidf_snacks",
+    "tfidf_spotify",
+    "tfidf_swiggy",
+    "tfidf_tea",
+    "tfidf_transport",
+    "tfidf_uber",
+    "tfidf_upi",
+    "tfidf_utilities",
+    "tfidf_youtube",
+    "tfidf_zomato",
+    "Year",
+    "Month",
+    "Day",
+    "Day_of_Week",
+    "Week_of_Year",
+    "Day_of_Month",
+    "Is_Weekend",
+    "Sin_Month",
+    "Cos_Month",
+    "Sin_Day_of_Week",
+    "Cos_Day_of_Week",
+    "Previous_Expense",
+    "Rolling_3_Day_Average",
+    "Rolling_7_Day_Average",
+    "Rolling_14_Day_Average",
+    "Previous_7_Day_Total",
+    "Previous_14_Day_Total",
+    "Previous_30_Day_Total",
+    "Transaction_Count",
+    "Desc_Length",
+    "Desc_Has_Food",
+    "Desc_Has_Transport",
+    "Desc_Has_Subscription",
+    "Desc_Has_Bill",
+    "Category_Entertainment",
+    "Category_Food",
+    "Category_Health",
+    "Category_Shopping",
+    "Category_Transport",
+    "Category_Utilities",
+    "Payment_Cash",
+    "Payment_Credit Card",
+    "Payment_Net Banking",
+    "Payment_UPI"
+  ],
+  "feature_importances": [
+    {
+      "feature": "Est_Log_Amount",
+      "importance": 0.6388999819755554,
+      "relative_importance": 63.88999938964844
+    },
+    {
+      "feature": "Day",
+      "importance": 0.08190000057220459,
+      "relative_importance": 8.1899995803833
+    },
+    {
+      "feature": "Desc_Length",
+      "importance": 0.05510000139474869,
+      "relative_importance": 5.510000228881836
+    },
+    {
+      "feature": "Month",
+      "importance": 0.03830000013113022,
+      "relative_importance": 3.8299999237060547
+    },
+    {
+      "feature": "tfidf_shopping",
+      "importance": 0.03280000016093254,
+      "relative_importance": 3.2799999713897705
+    },
+    {
+      "feature": "Week_of_Year",
+      "importance": 0.031599998474121094,
+      "relative_importance": 3.1600000858306885
+    },
+    {
+      "feature": "Rolling_7_Day_Average",
+      "importance": 0.030799999833106995,
+      "relative_importance": 3.0799999237060547
+    },
+    {
+      "feature": "Previous_Expense",
+      "importance": 0.027699999511241913,
+      "relative_importance": 2.7699999809265137
+    },
+    {
+      "feature": "Previous_7_Day_Total",
+      "importance": 0.02590000070631504,
+      "relative_importance": 2.5899999141693115
+    },
+    {
+      "feature": "Rolling_3_Day_Average",
+      "importance": 0.01860000006854534,
+      "relative_importance": 1.8600000143051147
+    },
+    {
+      "feature": "Previous_30_Day_Total",
+      "importance": 0.013000000268220901,
+      "relative_importance": 1.2999999523162842
+    },
+    {
+      "feature": "tfidf_entertainment",
+      "importance": 0.002899999963119626,
+      "relative_importance": 0.28999999165534973
+    },
+    {
+      "feature": "Day_of_Week",
+      "importance": 0.0020000000949949026,
+      "relative_importance": 0.20000000298023224
+    },
+    {
+      "feature": "tfidf_order",
+      "importance": 0.0006000000284984708,
+      "relative_importance": 0.05999999865889549
+    },
+    {
+      "feature": "tfidf_accessories",
+      "importance": 0.0,
+      "relative_importance": 0.0
+    }
+  ],
+  "training_time": "2026-10-26 21:31:52"
+}

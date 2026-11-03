@@ -1,0 +1,3 @@
+"""
+Fyte API routers package
+"""
