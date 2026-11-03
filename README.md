@@ -134,11 +134,3 @@ The modern dashboard will launch at: [http://localhost:5173](http://localhost:51
 
 ---
 
-## 🎓 College Viva & Evaluation Highlights
-
-Refer to [`docs/viva_questions.md`](docs/viva_questions.md) for full answers to common evaluator questions:
-1. *Why time-series regression and not classification?*
-2. *How is data leakage avoided when computing rolling window aggregates?*
-3. *Why did Random Forest outperform Gradient Boosting and Linear Regression on small data?*
-4. *How does the multi-step forward forecasting work?*
-5. *How does the IQR anomaly detection handle category-level context?*
